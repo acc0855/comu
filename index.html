@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Page 1</title>
+</head>
+<body>
+    <h1>Page 1</h1>
+    <input type="text" id="textInput" placeholder="Type your text here">
+    <button onclick="saveText()">Save Text</button>
+
+    <script>
+        function saveText() {
+            const textInput = document.getElementById('textInput').value;
+            localStorage.setItem('savedText', textInput);
+            window.location.href = 'web2.html';
+        }
+    </script>
+</body>
+</html>
